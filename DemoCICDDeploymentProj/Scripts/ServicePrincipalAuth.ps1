@@ -1,0 +1,3 @@
+#
+# ServicePrincipalAuth.ps1
+#

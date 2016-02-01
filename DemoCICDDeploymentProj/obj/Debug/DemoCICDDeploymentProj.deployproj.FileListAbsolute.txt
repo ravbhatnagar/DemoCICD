@@ -1,0 +1,1 @@
+E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDDeploymentProj\obj\Debug\DemoCICDDeploymentProj.deployprojResolveAssemblyReference.cache
