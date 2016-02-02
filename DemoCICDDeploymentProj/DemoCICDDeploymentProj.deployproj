@@ -57,6 +57,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoCICDSqlProj\DemoCICDSqlProj.sqlproj">
+      <Targets>
+      </Targets>
+      <AdditionalProperties>
+      </AdditionalProperties>
+      <IncludeFilePath>
+      </IncludeFilePath>
+    </ProjectReference>
     <ProjectReference Include="..\DemoCICDWebApp.Tests\DemoCICDWebApp.Tests.csproj">
       <Targets>
       </Targets>

@@ -1,6 +1,52 @@
 ﻿{
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-    }
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"hostingPlanName": {
+			"value": "ravhp4444"
+		},
+		"newStorageAccountName": {
+			"value": "ravcicddemostorage1"
+		},
+		"vmLocation": {
+			"value": "West US"
+		},
+		"vmName": {
+			"value": "ravcicddemovm1"
+		},
+		"adminUserName": {
+			"value": "democicdadmin"
+		},
+		"dnsName": {
+			"value": "ravcicddemodns1"
+		},
+		"vmSize": {
+			"value": "Standard_A3"
+		},
+		"adminPassword": {
+			"value": "P@ssword3"
+		},
+		"_artifactsLocation": {
+			"value": "https://ravcicddemostorage.blob.core.windows.net/packages/package.zip"
+		},
+		"DatabaseServerName": {
+			"value": "ravcicddemosqlsvr1"
+		},
+		"DatabaseServerLocation": {
+			"value": "westus"
+		},
+		"databaseServerAdminLogin": {
+			"value": "democicdadmin"
+		},
+		"databaseServerAdminLoginPassword": {
+			"value": "P@ssword3"
+		},
+		"databaseName": {
+			"value": "ravdemocicddemodb1"
+		},
+		"modulesUrl": {
+			"value": "https://github.com/Azure/azure-quickstart-templates/raw/master/201-web-app-vm-dsc/ConfigureWebServer.ps1.zip"
+		}
+
+	}
 }
