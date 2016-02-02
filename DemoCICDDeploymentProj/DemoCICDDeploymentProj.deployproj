@@ -36,8 +36,10 @@
     <Content Include="Templates\azuredeploy.parameters.json" />
     <None Include="Scripts\ServicePrincipalAuth.ps1" />
     <None Include="Scripts\UploadArtifactsToBlob.ps1" />
-    <None Include="Tools\DeployDacPac.ps1" />
-    <None Include="Tools\sqlScriptDeploy.bat" />
+    <Content Include="Tools\DeployDacPac.ps1">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\sqlScriptDeploy.bat" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tools\AzCopy.exe" />
