@@ -25,7 +25,6 @@
   <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
   <!-- vertag<:>end -->
   <ItemGroup>
-    <Folder Include="Scripts\" />
     <Folder Include="Templates\" />
     <Folder Include="Tools\" />
   </ItemGroup>
@@ -36,6 +35,8 @@
     <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
     <Content Include="Templates\azuredeploy.json" />
     <Content Include="Templates\azuredeploy.parameters.json" />
+    <None Include="Scripts\ServicePrincipalAuth.ps1" />
+    <None Include="Scripts\UploadArtifactsToBlob.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tools\AzCopy.exe" />
