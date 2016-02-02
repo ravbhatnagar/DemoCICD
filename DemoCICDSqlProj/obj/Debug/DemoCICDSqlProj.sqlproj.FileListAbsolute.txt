@@ -1,9 +1,9 @@
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\bin\Debug\DemoCICDSqlProj.dacpac
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\bin\Debug\DemoCICDSqlProj.dll
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\bin\Debug\DemoCICDSqlProj.pdb
+E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\DemoCICDSqlProj.dll
+E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\DemoCICDSqlProj.pdb
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\Model.xml
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\refactor.xml
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\postdeploy.sql
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\predeploy.sql
-E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\DemoCICDSqlProj.dll
-E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDSqlProj\obj\Debug\DemoCICDSqlProj.pdb

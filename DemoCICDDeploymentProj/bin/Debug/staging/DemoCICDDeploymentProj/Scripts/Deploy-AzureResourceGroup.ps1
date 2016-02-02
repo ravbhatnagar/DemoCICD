@@ -20,4 +20,9 @@ $sasToken = ConvertTo-SecureString $sasToken -AsPlainText -Force
 
 
 #New-AzureRmResourceGroupDeployment -Name ravcddep -hostingPlanName ravhp4444 -TemplateFile "C:\Program Files (x86)\Jenkins\jobs\ravTestProj1\workspace\WebApplication1\AzureResourceGroup1\Templates\WebSite.json" -ResourceGroupName ravAzureRG1 -_artifactsLocationSasToken $sasToken -_artifactsLocation https://ravwdstorage2.blob.core.windows.net/packages/WebApplication1.zip
-New-AzureRmResourceGroupDeployment -Name ('ravcddep' +  '-' + ((Get-Date).ToUniversalTime().ToString('MMdd-HHmm'))) -TemplateFile "C:\Program Files (x86)\Jenkins\jobs\Demo_CICD\workspace\DemoCICDDeploymentProj\bin\Debug\staging\DemoCICDDeploymentProj\Templates\azuredeploy.json" -ResourceGroupName $resourceGroupName -TemplateParameterFile "C:\Program Files (x86)\Jenkins\jobs\Demo_CICD\workspace\DemoCICDDeploymentProj\bin\Debug\staging\DemoCICDDeploymentProj\Templates\azuredeploy.parameters.json" -_artifactsLocationSasToken $sasToken -Verbose
+$webVMDeployment = New-AzureRmResourceGroupDeployment -Name ('ravcddep' +  '-' + ((Get-Date).ToUniversalTime().ToString('MMdd-HHmm'))) -TemplateFile "C:\Program Files (x86)\Jenkins\jobs\Demo_CICD\workspace\DemoCICDDeploymentProj\bin\Debug\staging\DemoCICDDeploymentProj\Templates\azuredeploy.json" -ResourceGroupName $resourceGroupName -TemplateParameterFile "C:\Program Files (x86)\Jenkins\jobs\Demo_CICD\workspace\DemoCICDDeploymentProj\bin\Debug\staging\DemoCICDDeploymentProj\Templates\azuredeploy.parameters.json" -_artifactsLocationSasToken $sasToken -Verbose
+
+$connectionString = $webVMDeployment.Outputs.sqlDbConnectionString.Value
+$connectionStringValue = ConvertTo-SecureString $connectionString -AsPlainText -Force
+
+$connectionStringSecret = Set-AzureKeyVaultSecret -VaultName "ravCICDDemoKeyVault" -Name "sqlConnectionString" -SecretValue $connectionStringValue
