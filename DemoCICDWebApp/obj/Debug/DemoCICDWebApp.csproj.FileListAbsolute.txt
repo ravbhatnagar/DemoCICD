@@ -64,6 +64,6 @@ E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\bin\Microsoft.Owin.Securit
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\bin\Microsoft.Owin.Security.Google.xml
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\bin\Microsoft.Owin.Security.Twitter.xml
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\obj\Debug\DemoCICDWebApp.csprojResolveAssemblyReference.cache
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\obj\Debug\DemoCICDWebApp.dll
 E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\obj\Debug\DemoCICDWebApp.pdb
+E:\src\DemoCICD\DemoCICDDeploymentProj\DemoCICDWebApp\obj\Debug\DemoCICDWebApp.csprojResolveAssemblyReference.cache

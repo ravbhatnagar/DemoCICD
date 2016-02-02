@@ -26,7 +26,6 @@
   <!-- vertag<:>end -->
   <ItemGroup>
     <Folder Include="Templates\" />
-    <Folder Include="Tools\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Deployment.targets">
@@ -37,6 +36,10 @@
     <Content Include="Templates\azuredeploy.parameters.json" />
     <None Include="Scripts\ServicePrincipalAuth.ps1" />
     <None Include="Scripts\UploadArtifactsToBlob.ps1" />
+    <Content Include="Tools\DeployDacPac.ps1">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\sqlScriptDeploy.bat" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tools\AzCopy.exe" />
@@ -57,6 +60,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoCICDSqlProj\DemoCICDSqlProj.sqlproj">
+      <Targets>
+      </Targets>
+      <AdditionalProperties>
+      </AdditionalProperties>
+      <IncludeFilePath>
+      </IncludeFilePath>
+    </ProjectReference>
     <ProjectReference Include="..\DemoCICDWebApp.Tests\DemoCICDWebApp.Tests.csproj">
       <Targets>
       </Targets>
